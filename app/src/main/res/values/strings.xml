@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CSSE_Project</string>
+    <string name="tv1">DASHBOARD</string>
+    <string name="btn1">Create Purchase Requisition</string>
+    <string name="btn2">Requisite Orders</string>
+    <string name="tv2">Create Purchase Order</string>
+    <string name="tv3">Site Name :</string>
+    <string name="tv4">Item Name :</string>
+    <string name="tv5">Supplier Name :</string>
+    <string name="tv6">Delivery Address :</string>
+    <string name="tv7">Quantity :</string>
+    <string name="tv8">Required Date :</string>
+    <string name="tv9">Description :</string>
+    <string name="tv10">Total Price :</string>
+    <string name="btn3">Send</string>
+    <string name="btn4">Clear</string>
+    <string name="edtn3" />
+    <string name="edtn2" />
+    <string name="edtn1" />
+
+</resources>

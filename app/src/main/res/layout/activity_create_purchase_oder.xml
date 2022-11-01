@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePurchaseOder">
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="297dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="@string/tv2"
+        android:textAlignment="center"
+        android:textColor="#B4020000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="@string/tv8"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="116dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#A52525"
+        android:text="@string/btn4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@+id/etn2" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="@string/tv9"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv8" />
+
+    <EditText
+        android:id="@+id/etd1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:fontFamily="@font/asap_medium"
+        android:inputType="date"
+        android:textAlignment="textEnd"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etn1" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="@string/tv6"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <EditText
+        android:id="@+id/edtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:fontFamily="@font/asap_medium"
+        android:inputType="textPersonName"
+        android:text="@string/edtn1"
+        android:textAlignment="textEnd"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="@string/tv3"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <EditText
+        android:id="@+id/edta1"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:fontFamily="@font/asap_medium"
+        android:inputType="textPostalAddress"
+        android:textAlignment="textEnd"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtn3" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="99dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="@string/tv7"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    <EditText
+        android:id="@+id/edtm1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:fontFamily="@font/asap_medium"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textAlignment="textEnd"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etd1" />
+
+    <EditText
+        android:id="@+id/edtn3"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:fontFamily="@font/asap_medium"
+        android:inputType="textPersonName"
+        android:text="@string/edtn3"
+        android:textAlignment="textEnd"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtn2" />
+
+    <EditText
+        android:id="@+id/edtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:fontFamily="@font/asap_medium"
+        android:inputType="textPersonName"
+        android:text="@string/edtn2"
+        android:textAlignment="textEnd"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtn1" />
+
+    <EditText
+        android:id="@+id/etn1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:fontFamily="@font/asap_medium"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edta1" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="116dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/btn3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv10" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="@string/tv5"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <EditText
+        android:id="@+id/etn2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:fontFamily="@font/asap_medium"
+        android:inputType="number"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtm1" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="@string/tv10"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv9" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="@string/tv4"
+        android:textColor="#BA0E0D0D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
