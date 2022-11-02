@@ -11,6 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 public class CreatePurchaseOder extends AppCompatActivity {
 
@@ -62,13 +66,34 @@ public class CreatePurchaseOder extends AppCompatActivity {
                 String description = edtm1.getText().toString();
                 int tPrice = Integer.parseInt(etn2.getText().toString());
 
-                Boolean checkInsertData = db.insertData(siteName,itemName,supplierName,dAddress,quantity,rDate,description,
+                JSONArray items = new JSONArray();
+                JSONObject purchaseOrder = new JSONObject();
+                JSONObject item = new JSONObject();
+                try {
+                    item.put("name",itemName);
+                    item.put("description",description);
+                    item.put("quantity",quantity);
+                    item.put("amount",tPrice);
+                    items.put(item);
+                    purchaseOrder.put("name","");
+                    purchaseOrder.put("date",rDate);
+                    purchaseOrder.put("siteName",siteName);
+                    purchaseOrder.put("status","");
+                    purchaseOrder.put("supplierName",supplierName);
+                    purchaseOrder.put("deliveryAddress",dAddress);
+                    purchaseOrder.put("items",items);
+                    APICall.sendJsonPostRequest(getApplicationContext(),purchaseOrder);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+               /* boolean checkInsertData = db.insertData(siteName,itemName,supplierName,dAddress,quantity,rDate,description,
                         tPrice);
-                if(checkInsertData==TRUE){
+                if(checkInsertData){
                     Toast.makeText(CreatePurchaseOder.this,"New Entry Inserted", Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(CreatePurchaseOder.this,"New Entry Not Inserted", Toast.LENGTH_SHORT).show();
-                }
+                }*/
 
             }
         });
