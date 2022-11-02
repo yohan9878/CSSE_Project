@@ -19,6 +19,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -37,5 +39,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

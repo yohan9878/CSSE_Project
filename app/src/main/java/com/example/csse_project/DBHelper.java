@@ -13,7 +13,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String SQL_CREATE_ENTRIES =
-                "CREATE TABLE" + PurchaseOderMaster.PurchaseOrders.TABLE_NAME + "("+
+                "CREATE TABLE " + PurchaseOderMaster.PurchaseOrders.TABLE_NAME + "("+
                         PurchaseOderMaster.PurchaseOrders._ID + "INTEGER PRIMARY KEY," +
                         PurchaseOderMaster.PurchaseOrders.COLUMN_NAME_SITE_NAME + "TEXT," +
                         PurchaseOderMaster.PurchaseOrders.COLUMN_NAME_ITEM_NAME + "TEXT," +

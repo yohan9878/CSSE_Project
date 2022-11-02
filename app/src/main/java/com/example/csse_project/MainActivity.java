@@ -14,12 +14,16 @@ public class MainActivity extends AppCompatActivity {
     Button btn1;
     Button btn2;
 
+    DBHelper db;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        db = new DBHelper(this);
 
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
