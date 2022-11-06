@@ -86,14 +86,18 @@ public class CreatePurchaseOder extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
-               /* boolean checkInsertData = db.insertData(siteName,itemName,supplierName,dAddress,quantity,rDate,description,
-                        tPrice);
-                if(checkInsertData){
-                    Toast.makeText(CreatePurchaseOder.this,"New Entry Inserted", Toast.LENGTH_SHORT).show();
-                }else {
-                    Toast.makeText(CreatePurchaseOder.this,"New Entry Not Inserted", Toast.LENGTH_SHORT).show();
-                }*/
+                PurchaseOrder order = new PurchaseOrder();
+                order.setSiteName(siteName);
+                order.setItemName(itemName);
+                order.setSupplierName(supplierName);
+                order.setDeliveryAddress(dAddress);
+                order.setQuantity(quantity);
+                order.setRequiredDate(Integer.parseInt(rDate));
+                order.setDescription(description);
+                order.setPrice(tPrice);
+                PurchaseOrderDatabaseHelper db = new PurchaseOrderDatabaseHelper(view.getContext());
+                long l = db.addPurchaseOrder(order);
+                System.out.println(l);
 
             }
         });
